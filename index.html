@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DARK HUNTER 141</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="application.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+
+</head>
+<body class="layout layout-header-fixed layout-sidebar-fixed layout-footer-fixed">
+    <div id="self_des" style="display: none;">A collections of most popular web based applications and tools online for
+        free.</div>
+    <div class="layout-header">
+        <div class="navbar navbar-default">
+            <div style="background-color: black" class="navbar-header">
+                <a class="navbar-brand navbar-brand-center" href="/home">
+                    <img class="navbar-brand-logo" src="logo.png">
+                </a>
+                <button class="navbar-toggler visible-xs-block collapsed" type="button" data-toggle="collapse"
+                    data-target="#sidenav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="bars">
+                        <span class="bar-line bar-line-1 out"></span>
+                        <span class="bar-line bar-line-2 out"></span>
+                        <span class="bar-line bar-line-3 out"></span>
+                    </span>
+                    <span class="bars bars-x">
+                        <span class="bar-line bar-line-4"></span>
+                        <span class="bar-line bar-line-5"></span>
+                    </span>
+                </button>
+                <button class="navbar-toggler visible-xs-block collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="arrow-up"></span>
+                    <span class="ellipsis ellipsis-vertical">
+                        <img class="ellipsis-object" width="32" height="32" src="/tools/assets/images/user.png"></span>
+                </button>
+            </div>
+            <div class="navbar-toggleable">
+                <nav id="navbar" class="navbar-collapse collapse">
+                    <button class="sidenav-toggler hidden-xs" title="Collapse sidenav" aria-expanded="true"
+                        type="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="bars">
+                            <span class="bar-line bar-line-1 out"></span>
+                            <span class="bar-line bar-line-2 out"></span>
+                            <span class="bar-line bar-line-3 out"></span>
+                            <span class="bar-line bar-line-4 in"></span>
+                            <span class="bar-line bar-line-5 in"></span>
+                            <span class="bar-line bar-line-6 in"></span>
+                        </span>
+                    </button>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" id="theme" style="cursor: pointer;">
+                                <span class="icon-with-child hidden-xs">
+                                    <span class="icon icon-retweet icon-lg"></span> Dark Mode </span>
+                                <span class="visible-xs-block">
+                                    <span class="icon icon-retweet icon-lg icon-fw"></span>
+                                    Dark Mode </span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a id="support" class="dropdown-toggle" style="cursor: pointer;">
+                                <span class="icon-with-child hidden-xs">
+                                    <span class="icon icon-envelope-o icon-lg"></span> Contact
+                                </span>
+                                <span class="visible-xs-block">
+                                    <span class="icon icon-envelope-o icon-lg icon-fw"></span>
+                                    Contact us
+                                </span>
+                            </a>
+                        </li>
+                        <li class="dropdown ">
+                            <a class="dropdown-toggle" href="/legal">
+                                <span class="icon-with-child hidden-xs">
+                                    <span class="icon icon-book icon-lg"></span> Terms
+                                </span>
+                                <span class="visible-xs-block">
+                                    <span class="icon icon-book icon-lg icon-fw"></span>
+                                    TOS And FAQ
+                                </span>
+                            </a>
+                        </li>
+                        <li class="dropdown ">
+                            <a class="dropdown-toggle" href="/status">
+                                <span class="icon-with-child hidden-xs">
+                                    <span class="icon icon-cog icon-lg"></span> Status
+                                </span>
+                                <span class="visible-xs-block">
+                                    <span class="icon icon-cog icon-lg icon-fw"></span>
+                                    API Statistics
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="layout-main">
+        <div class="layout-sidebar">
+            <div class="layout-sidebar-backdrop"></div>
+            <div class="layout-sidebar-body">
+                <div class="custom-scrollbar sticky-scrollbar">
+                    <nav id="sidenav" class="sidenav-collapse collapse">
+                        <ul class="sidenav">
+                            <li class="sidenav-search hidden-md hidden-lg">
+                                <form class="sidenav-form" action="/">
+                                    <div class="form-group form-group-sm">
+                                        <div class="input-with-icon">
+                                            <input class="form-control" type="text" placeholder="Search">
+                                            <span class="icon icon-search input-icon"></span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                            <li class="sidenav-heading">Web tools</li>
+                            <li class="sidenav-item ">
+                                <a href="/traceroute">
+                                    <span class="sidenav-icon icon icon-circle-thin"></span>
+                                    <span class="sidenav-label">IP Traceroute</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-item ">
+                                <a href="/ping">
+                                    <span class="sidenav-icon icon icon-signal"></span>
+                                    <span class="sidenav-label">Ping Address</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-item active">
+                                <a href="/dns">
+                                    <span class="sidenav-icon icon icon-refresh"></span>
+                                    <span class="sidenav-label">DNS Resolver</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-item ">
+                                <a href="/whois">
+                                    <span class="sidenav-icon icon icon-database"></span>
+                                    <span class="sidenav-label">Whois Lookup</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-item ">
+                                <a href="/geoip">
+                                    <span class="sidenav-badge badge badge-danger">New</span>
+                                    <span class="sidenav-icon icon icon-map"></span>
+                                    <span class="sidenav-label">IP Geolocation</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-item ">
+                                <a href="/subdomain-finder">
+                                    <span class="sidenav-icon icon icon-search"></span>
+                                    <span class="sidenav-label">Subdomain BF</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-heading">Skype tools</li>
+                            <li class="sidenav-item ">
+                                <a href="/skyperesolver">
+                                    <span class="sidenav-icon icon icon-skype"></span>
+                                    <span class="sidenav-label">Skype Resolver</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-item ">
+                                <a href="/email2skype">
+                                    <span class="sidenav-icon icon icon-envelope"></span>
+                                    <span class="sidenav-label">Email to Skype</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-item ">
+                                <a href="/phone2skype">
+                                    <span class="sidenav-icon icon icon-phone"></span>
+                                    <span class="sidenav-label">Phone to Skype</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-heading">Advanced tools</li>
+                            <li class="sidenav-item">
+                                <a href="https://zetsal.com" target="_blank">
+                                    <span class="sidenav-badge badge badge-success">Free</span>
+                                    <span class="sidenav-icon icon icon-plug"></span>
+                                    <span class="sidenav-label">Secured VPN(s)</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-item ">
+                                <a href="/dstat">
+                                    <span class="sidenav-icon icon icon-bar-chart"></span>
+                                    <span class="sidenav-label">Live Dstat Graph</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-heading">Other tools</li>
+                            <li class="sidenav-item ">
+                                <a href="/speedtest">
+                                    <span class="sidenav-icon icon icon-feed"></span>
+                                    <span class="sidenav-label">Bandwidth Test</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-item ">
+                                <a href="/tempmail">
+                                    <span class="sidenav-icon icon icon-envelope"></span>
+                                    <span class="sidenav-label">Temporary Mail</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-item ">
+                                <a href="/fakeproof">
+                                    <span class="sidenav-icon icon icon-photo"></span>
+                                    <span class="sidenav-label">FakeProof Maker</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-item ">
+                                <a href="/covid">
+                                    <span class="sidenav-badge badge badge-danger">New</span>
+                                    <span class="sidenav-icon icon icon-bug"></span>
+                                    <span class="sidenav-label">Coronavirus Live</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-heading">Steam tools</li>
+                            <li class="sidenav-item ">
+                                <a href="/steamid">
+                                    <span class="sidenav-icon icon icon-steam-square"></span>
+                                    <span class="sidenav-label">SteamID Finder</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-item ">
+                                <a href="/csgo-cheatest">
+                                    <span class="sidenav-icon icon icon-steam-square"></span>
+                                    <span class="sidenav-label">CSGO Cheatest</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-item ">
+                                <a href="/csgo-reportbot">
+                                    <span class="sidenav-icon icon icon-steam-square"></span>
+                                    <span class="sidenav-label">CSGO Reportbot</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-heading">General tools</li>
+                            <li class="sidenav-item ">
+                                <a href="/bip70decoder">
+                                    <span class="sidenav-icon icon icon-bitcoin"></span>
+                                    <span class="sidenav-label">Bitpay Decoder</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-item ">
+                                <a href="/website-ranking">
+                                    <span class="sidenav-icon icon icon-globe"></span>
+                                    <span class="sidenav-label">Websites Rank</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-item ">
+                                <a href="/hash-identifier">
+                                    <span class="sidenav-icon icon icon-hashtag"></span>
+                                    <span class="sidenav-label">Hash identifier</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-item ">
+                                <a href="/hash-generator">
+                                    <span class="sidenav-icon icon icon-hashtag"></span>
+                                    <span class="sidenav-label">Hash Generator</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-item ">
+                                <a href="/tools/getstrafter">
+                                    <span class="sidenav-icon icon icon-file-text-o"></span>
+                                    <span class="sidenav-label">Get String After</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-item ">
+                                <a href="/tools/getstrbefore">
+                                    <span class="sidenav-icon icon icon-file-text-o"></span>
+                                    <span class="sidenav-label">Get String Before</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-item ">
+                                <a href="/tools/getstrbetween">
+                                    <span class="sidenav-icon icon icon-file-text-o"></span>
+                                    <span class="sidenav-label">Get String Between</span>
+                                </a>
+                            </li>
+                            <li class="sidenav-item ">
+                                <a href="/tools/remove_duplicate_lines">
+                                    <span class="sidenav-icon icon icon-file-text-o"></span>
+                                    <span class="sidenav-label">Del Duplicate Lines</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="layout-content">
+            <div class="layout-content-body">
+                <div class="title-bar">
+                    <div class="row gutter-xs">
+                        <div class="col-md-6 col-lg-3 col-lg-push-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="media">
+                                        <div class="media-middle media-left">
+                                            <span class="bg-primary circle sq-48">
+                                                <span class="icon icon-user"></span>
+                                            </span>
+                                        </div>
+                                        <div class="media-middle media-body">
+                                            <h6 class="media-heading">Visitors</h6>
+                                            <h3 class="media-heading">
+                                                <span class="fw-l">892.242</span>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 col-lg-pull-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="media">
+                                        <div class="media-middle media-left">
+                                            <span class="bg-danger circle sq-48">
+                                                <span class="icon icon-database"></span>
+                                            </span>
+                                        </div>
+                                        <div class="media-middle media-body">
+                                            <h6 class="media-heading">Leaked Database</h6>
+                                            <h3 class="media-heading">
+                                                <span class="fw-l">249.926M</span>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 col-lg-push-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="media">
+                                        <div class="media-middle media-left">
+                                            <span class="bg-info circle sq-48">
+                                                <span class="icon icon-skype"></span>
+                                            </span>
+                                        </div>
+                                        <div class="media-middle media-body">
+                                            <h6 class="media-heading">Skype Resolves</h6>
+                                            <h3 class="media-heading">
+                                                <span class="fw-l">229.291</span>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 col-lg-pull-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="media">
+                                        <div class="media-middle media-left">
+                                            <span class="bg-success circle sq-48">
+                                                <span class="icon icon-server"></span>
+                                            </span>
+                                        </div>
+                                        <div class="media-middle media-body">
+                                            <h6 class="media-heading">Global Usage</h6>
+                                            <h3 class="media-heading">
+                                                <span class="fw-l">36.974.385</span>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                     
+                     
+                     
+                </div>
+            </div>
+        </div>
+         
+        <div class="layout-footer">
+            <div class="layout-footer-body">
+                
+                <small class="copyright">&copy; Dark Hunter 141 All rights reserved</small>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+     
+</body>
+</html>
