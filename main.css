@@ -6,11 +6,29 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
-
+:root{
+   --primary-color : white;
+   --secondary-color : black;
+}
+.dark{
+    --primary-color : black;
+    --secondary-color : white;
+}
 body {
     margin: 0
 }
-
+.media{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.navbar{
+    background-color: var(--primary-color) !important ;
+    color:var(--secondary-color) !important;
+}
+.layout-footer{
+     background-color: var(--primary-color) !important;
+     color: var(--secondary-color);
+}
 article,
 aside,
 details,
@@ -227,8 +245,8 @@ th {
     *,
     :after,
     :before {
-        background: 0 0 !important;
-        color: #000 !important;
+        /* background: 0 0 !important; */
+        /* color: #000 !important; */
         -webkit-box-shadow: none !important;
         box-shadow: none !important;
         text-shadow: none !important
@@ -307,7 +325,7 @@ th {
 
     .table-bordered td,
     .table-bordered th {
-        border: 1px solid #ddd !important
+        border: 1px solid  !important
     }
 }
 
@@ -331,8 +349,8 @@ body {
     font-family: Roboto, sans-serif;
     font-size: 13px;
     line-height: 1.538462;
-    color: #2c3e50;
-    background-color: #f2f5f8
+    color:var(--secondary-color);
+    background-color:var(--primary-color)
 }
 
 button,
@@ -11130,8 +11148,8 @@ button.collapsed .bars-x .bar-line:last-child {
 }
 
 .card {
-    background-color: #fff;
-    border: 1px solid #f2f5f8;
+    
+    border: 1px solid ;
     border-radius: 4px;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -11957,7 +11975,7 @@ button.collapsed .ellipsis-object {
 }
 
 .layout-header {
-    background-color: #fff;
+    
     -webkit-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .5);
     box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .5);
     left: 0;
@@ -12366,7 +12384,7 @@ select.md-form-control option {
 
     .navbar-default .list-group .list-group-item:focus,
     .navbar-default .list-group .list-group-item:hover {
-        background-color: #fff;
+        background-co;
         color: #6185a8
     }
 
@@ -15835,3 +15853,7 @@ a.bg-dribbble:hover {
 .fw-b {
     font-weight: 600
 }
+/* .navbar-toggleable, .media,.layout-header{
+     background-color: var(--secondary-color);
+    color: var(--primary-color);
+} */
