@@ -11148,11 +11148,9 @@ button.collapsed .bars-x .bar-line:last-child {
 }
 
 .card {
-    
-    border: 1px solid ;
-    border-radius: 4px;
+    padding: 1px; 
     -webkit-box-shadow: none;
-    box-shadow: none;
+    box-shadow: #000;
     display: block;
     margin-bottom: 10px;
     position: relative
